@@ -6,7 +6,7 @@ A minimal LangChain-based agent project built for experimentation and learning. 
 
 - Simple LangChain agent scaffold
 - Environment variable support via `.env`
-- Example app entrypoints: `app.py`, `main.py`
+- Example app entrypoints: `app.py`
 - Notebook research work in `research/agent_demo.ipynb`
 
 ## Technology
@@ -81,7 +81,6 @@ jupyter notebook research/agent_demo.ipynb
 ├── .env
 ├── README.md
 ├── app.py
-├── main.py
 ├── requirements.txt
 └── research/
     └── agent_demo.ipynb
