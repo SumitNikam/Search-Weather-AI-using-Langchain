@@ -21,7 +21,6 @@ A minimal LangChain-based agent project built for experimentation and learning. 
 This repository is organized as a small Python agent project:
 
 - `app.py` - Primary application script for launching the agent logic.
-- `main.py` - Secondary entrypoint, typically used for testing or demo execution.
 - `requirements.txt` - Python dependencies required to run the project.
 - `.env` - Local environment variables containing API keys.
 - `research/agent_demo.ipynb` - Jupyter notebook for experimentation and development notes.
@@ -30,7 +29,7 @@ The application follows a simple architecture:
 
 1. Load configuration from `.env`.
 2. Initialize the agent and language model client.
-3. Execute the agent workflow through `app.py` or `main.py`.
+3. Execute the agent workflow through `app.py`.
 
 ## Getting Started
 
@@ -42,8 +41,8 @@ The application follows a simple architecture:
 ### Installation
 
 ```bash
-conda create -n langagent python=3.11 -y
-conda activate langagent
+python -m venv langagent
+.\langagent\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
 
@@ -52,7 +51,7 @@ pip install -r requirements.txt
 Create a `.env` file at the repository root and add your API keys:
 
 ```dotenv
-OPENAI_API_KEY="your-openai-api-key"
+GOOGLE_API_KEY="your-google-api-key"
 TAVILY_API_KEY="your-tavily-api-key"
 WEATHERSTACK_API_KEY="your-weatherstack-api-key"
 ```
@@ -65,12 +64,6 @@ Use one of the Python entrypoints:
 
 ```bash
 python app.py
-```
-
-or
-
-```bash
-python main.py
 ```
 
 ### Notebook Exploration
